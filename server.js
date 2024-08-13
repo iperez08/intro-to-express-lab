@@ -21,7 +21,7 @@ const shoes = [
 app.get('/greetings/:name', (req, res) => {
     let randomInt = Math.floor(Math.random() * 3)
     const { name } = req.params
-    res.send(`<h1>Hey there ${name}! Today, your number is ${randomInt}`)
+    res.send(`Hey there ${name}! Today, your number is ${randomInt}`)
 }
 )
 
@@ -63,5 +63,5 @@ app.get('/shoes', (req, res) => {
 
 
 
-app.listen(3001, () => {
+app.listen(3000, () => {
 })
